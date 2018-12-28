@@ -25,7 +25,7 @@ public class MailUtils {
         // 2.创建邮件对象 javax.mail.Message
         // 3.发送一封激活邮件
 
-        String from = "18203692944@163.com";// 发件人电子邮箱
+        String from = "************";// 发件人电子邮箱
         String host = "smtp.163.com"; // 指定发送邮件的主机smtp.qq.com(QQ)|smtp.163.com(网易)
         Properties properties = System.getProperties();// 获取系统属性
         properties.setProperty("mail.smtp.host", host);// 设置邮件服务器
@@ -42,7 +42,7 @@ public class MailUtils {
             // 1.获取默认session对象（创建连接对象，连接到邮箱服务器）
             Session session = Session.getDefaultInstance(properties, new Authenticator() {
                 public PasswordAuthentication getPasswordAuthentication() {
-                    return new PasswordAuthentication("18203692944@163.com", "Yang03036011"); // 发件人邮箱账号、密码
+                    return new PasswordAuthentication("************om", "***************"); // 发件人邮箱账号、密码
                 }
             });
 
