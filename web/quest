@@ -1,0 +1,5 @@
+遇到的问题在数据库里面用bit表示用户是否激活的状态
+bit(0) --> false
+bit(1)-->true
+对应的javaBean类型是Boolean
+UPDATE customers set actived = true;  0-->1
